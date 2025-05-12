@@ -90,3 +90,9 @@ function portfolioItemDetails(portfolioItem) {
     document.querySelector(".pp-body").innerHTML =
         portfolioItem.querySelector(".portfolio-item-details").innerHTML;
 }
+// Flashcard flip logic
+document.querySelectorAll('.flashcard').forEach(card => {
+  card.addEventListener('click', function() {
+    card.classList.toggle('flipped');
+  });
+});
